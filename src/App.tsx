@@ -44,9 +44,6 @@ const App = () => {
   if (b[0] == "-") {
     console.log(parseInt("-" + v))
   }
-  else {
-    console.log(parseInt(v))
-  }
 
 
 

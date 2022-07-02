@@ -5,7 +5,7 @@ let globalIndex: number = 0;
 const App = () => {
   const inputRef: React.RefObject<HTMLInputElement> = useRef(null);
 
-  const [initialArray, setInitialArray] = useState<string[]>(new Array(6).fill(""));
+  const [initialArray, setInitialArray] = useState<string[]>(new Array(5).fill(""));
   const [otpIndexFocus, setOtpIndexFocus] = useState<number>(0);
 
 
@@ -35,6 +35,20 @@ const App = () => {
 
 
   }, [otpIndexFocus])
+
+
+
+  var a = 123456789
+  var v = a.toString().split("").reverse().join("");
+  var b = new String(a).split("")
+  if (b[0] == "-") {
+    console.log(parseInt("-" + v))
+  }
+  else {
+    console.log(parseInt(v))
+  }
+
+
 
 
   return (

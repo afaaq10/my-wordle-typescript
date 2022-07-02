@@ -40,7 +40,7 @@ const App = () => {
 
   var a = 123456789
   var v = a.toString().split("").reverse().join("");
-  var b = new String(a).split("")
+
 
 
 
